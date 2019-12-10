@@ -13,6 +13,17 @@
 		090477A2239F3B37008E335B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090477A1239F3B37008E335B /* Assets.xcassets */; };
 		090477A5239F3B37008E335B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090477A3239F3B37008E335B /* LaunchScreen.storyboard */; };
 		090477A8239F3B37008E335B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 090477A7239F3B37008E335B /* main.m */; };
+		090477B3239F3B83008E335B /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090477B2239F3B83008E335B /* BViewController.m */; };
+		090477B6239F3DDA008E335B /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090477B5239F3DDA008E335B /* AViewController.swift */; };
+		090477B9239F40DE008E335B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0904779C239F3B36008E335B /* ViewController.m */; };
+		090477BA239F40DE008E335B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 090477A7239F3B37008E335B /* main.m */; };
+		090477BB239F40DE008E335B /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090477B2239F3B83008E335B /* BViewController.m */; };
+		090477BC239F40DE008E335B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09047799239F3B36008E335B /* AppDelegate.m */; };
+		090477BD239F40DE008E335B /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090477B5239F3DDA008E335B /* AViewController.swift */; };
+		090477C0239F40DE008E335B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090477A3239F3B37008E335B /* LaunchScreen.storyboard */; };
+		090477C1239F40DE008E335B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090477A1239F3B37008E335B /* Assets.xcassets */; };
+		090477C2239F40DE008E335B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0904779E239F3B36008E335B /* Main.storyboard */; };
+		0904780A239F41ED008E335B /* Month-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09047809239F41ED008E335B /* Month-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +37,24 @@
 		090477A4239F3B37008E335B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		090477A6239F3B37008E335B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090477A7239F3B37008E335B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		090477AE239F3B47008E335B /* Week-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Week-Bridging-Header.h"; sourceTree = "<group>"; };
+		090477B1239F3B83008E335B /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		090477B2239F3B83008E335B /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		090477B4239F3CB4008E335B /* WeekPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeekPrefixHeader.pch; sourceTree = "<group>"; };
+		090477B5239F3DDA008E335B /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		090477C6239F40DE008E335B /* Month.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Month.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09047809239F41ED008E335B /* Month-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Month-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		09047792239F3B36008E335B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090477BE239F40DE008E335B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				09047797239F3B36008E335B /* Week */,
+				09047808239F41CB008E335B /* Month */,
 				09047796239F3B36008E335B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				09047795239F3B36008E335B /* Week.app */,
+				090477C6239F40DE008E335B /* Month.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,13 +89,26 @@
 				09047799239F3B36008E335B /* AppDelegate.m */,
 				0904779B239F3B36008E335B /* ViewController.h */,
 				0904779C239F3B36008E335B /* ViewController.m */,
+				090477B5239F3DDA008E335B /* AViewController.swift */,
+				090477B1239F3B83008E335B /* BViewController.h */,
+				090477B2239F3B83008E335B /* BViewController.m */,
 				0904779E239F3B36008E335B /* Main.storyboard */,
 				090477A1239F3B37008E335B /* Assets.xcassets */,
 				090477A3239F3B37008E335B /* LaunchScreen.storyboard */,
 				090477A6239F3B37008E335B /* Info.plist */,
 				090477A7239F3B37008E335B /* main.m */,
+				090477AE239F3B47008E335B /* Week-Bridging-Header.h */,
+				090477B4239F3CB4008E335B /* WeekPrefixHeader.pch */,
 			);
 			path = Week;
+			sourceTree = "<group>";
+		};
+		09047808239F41CB008E335B /* Month */ = {
+			isa = PBXGroup;
+			children = (
+				09047809239F41ED008E335B /* Month-Info.plist */,
+			);
+			path = Month;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +131,23 @@
 			productReference = 09047795239F3B36008E335B /* Week.app */;
 			productType = "com.apple.product-type.application";
 		};
+		090477B7239F40DE008E335B /* Month */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090477C3239F40DE008E335B /* Build configuration list for PBXNativeTarget "Month" */;
+			buildPhases = (
+				090477B8239F40DE008E335B /* Sources */,
+				090477BE239F40DE008E335B /* Frameworks */,
+				090477BF239F40DE008E335B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Month;
+			productName = Week;
+			productReference = 090477C6239F40DE008E335B /* Month.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +159,7 @@
 				TargetAttributes = {
 					09047794239F3B36008E335B = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -119,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				09047794239F3B36008E335B /* Week */,
+				090477B7239F40DE008E335B /* Month */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +193,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		090477BF239F40DE008E335B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090477C0239F40DE008E335B /* LaunchScreen.storyboard in Resources */,
+				0904780A239F41ED008E335B /* Month-Info.plist in Resources */,
+				090477C1239F40DE008E335B /* Assets.xcassets in Resources */,
+				090477C2239F40DE008E335B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -143,7 +213,21 @@
 			files = (
 				0904779D239F3B36008E335B /* ViewController.m in Sources */,
 				090477A8239F3B37008E335B /* main.m in Sources */,
+				090477B3239F3B83008E335B /* BViewController.m in Sources */,
 				0904779A239F3B36008E335B /* AppDelegate.m in Sources */,
+				090477B6239F3DDA008E335B /* AViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090477B8239F40DE008E335B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090477B9239F40DE008E335B /* ViewController.m in Sources */,
+				090477BA239F40DE008E335B /* main.m in Sources */,
+				090477BB239F40DE008E335B /* BViewController.m in Sources */,
+				090477BC239F40DE008E335B /* AppDelegate.m in Sources */,
+				090477BD239F40DE008E335B /* AViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +369,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JUJQC997YD;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Week/WeekPrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = Week/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,6 +386,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lsq.Week;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Week/Week-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,8 +397,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JUJQC997YD;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Week/WeekPrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = Week/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +411,63 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lsq.Week;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Week/Week-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		090477C4239F40DE008E335B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JUJQC997YD;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Week/WeekPrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"APPTYPE=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Month/Month-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D APPTYPE1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lsq.Month;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Week/Week-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		090477C5239F40DE008E335B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JUJQC997YD;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Week/WeekPrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "APPTYPE=1";
+				INFOPLIST_FILE = "$(SRCROOT)/Month/Month-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D APPTYPE1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lsq.Month;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Week/Week-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -332,6 +489,15 @@
 			buildConfigurations = (
 				090477AC239F3B37008E335B /* Debug */,
 				090477AD239F3B37008E335B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090477C3239F40DE008E335B /* Build configuration list for PBXNativeTarget "Month" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090477C4239F40DE008E335B /* Debug */,
+				090477C5239F40DE008E335B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

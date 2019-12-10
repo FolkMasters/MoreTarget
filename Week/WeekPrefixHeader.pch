@@ -1,0 +1,15 @@
+//
+//  WeekPrefixHeader.pch
+//  Week
+//
+//  Created by Shiqian.Lee on 2019/12/10.
+//  Copyright © 2019 LeeShiqian. All rights reserved.
+//
+
+#ifndef WeekPrefixHeader_pch
+#define WeekPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* WeekPrefixHeader_pch */
